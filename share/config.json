@@ -1,0 +1,8 @@
+{
+  "negative_heuristics": [ "IsDev::IgnoreFile" ],
+  "heuristics": [
+      "Tool::Dzil", "Tool::MakeMaker", "Tool::ModuleBuild",
+      "META", "Changelog", "TestDir", "DevDirMarker", "MYMETA", "Makefile",
+      "VCS::Git"
+  ]
+}
