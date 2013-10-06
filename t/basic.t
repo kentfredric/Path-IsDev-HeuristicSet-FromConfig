@@ -18,7 +18,8 @@ use FindBin;
 my $object = Path::IsDev::Object->new( set => 'FromConfig' );
 ok( ref $object, 'IsDev started with FromConfig Set' );
 my $result = $object->_matches("$FindBin::Bin/..");
-ok( ref $result, 'Got result for matching $PROJECTROOT' );
-diag( explain($result) );
+ok( ref $result,     'Got result for matching $PROJECTROOT' );
+ok( $result->result, 'result is true' );
+is( ref $result->reasons, 'ARRAY', 'reasons is ARRAY ref' );
 
 done_testing;
