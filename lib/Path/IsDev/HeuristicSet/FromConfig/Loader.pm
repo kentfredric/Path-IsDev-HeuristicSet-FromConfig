@@ -97,7 +97,7 @@ If not specified, combined from C<config> and C<config_file> wrapped in a C<Path
 
 =head2 C<config>
 
-Returns a File::UserConfig object preconfigured with a few things ( namely, C<dist> and C<module> )
+Returns a C<File::UserConfig> object pre-configured with a few things ( namely, C<dist> and C<module> )
 
 =head2 C<decoder>
 
