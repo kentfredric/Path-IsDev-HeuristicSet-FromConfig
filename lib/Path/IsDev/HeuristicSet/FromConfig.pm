@@ -12,6 +12,7 @@ BEGIN {
 # ABSTRACT: A Custom Heuristic Set from a configuration file
 
 
+
 use Role::Tiny::With;
 
 with 'Path::IsDev::Role::HeuristicSet::Simple';
@@ -68,6 +69,17 @@ In fact, its so agressive at this, I had to put a bit of code in the tests to st
 creating those directories during tests >_>.
 
 Pester File::UserConfig if you want this logic improved.
+
+=begin MetaPOD::JSON v1.1.0
+
+{
+    "namespace":"Path::IsDev::HeuristicSet::FromConfig",
+    "interface":"single_class",
+    "does":"Path::IsDev::Role::HeuristicSet::Simple"
+}
+
+
+=end MetaPOD::JSON
 
 =head1 AUTHOR
 
