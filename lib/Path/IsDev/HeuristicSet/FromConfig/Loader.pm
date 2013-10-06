@@ -85,7 +85,7 @@ The name of the C<module> for C<sharedir> mechanics and C<config> paths.
 
 =head2 C<config_file>
 
-The name of the file relative to the configuration dir
+The name of the file relative to the configuration C<dir>
 
     config.json
 
@@ -101,7 +101,7 @@ Returns a File::UserConfig object preconfigured with a few things ( namely, C<di
 
 =head2 C<decoder>
 
-Returns a JSON object to perform decoding with
+Returns a C<JSON> object to perform decoding with
 
 =head2 C<data>
 
