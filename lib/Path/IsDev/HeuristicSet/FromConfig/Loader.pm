@@ -52,7 +52,6 @@ use Class::Tiny {
 
 
 
-
 1;
 
 __END__
