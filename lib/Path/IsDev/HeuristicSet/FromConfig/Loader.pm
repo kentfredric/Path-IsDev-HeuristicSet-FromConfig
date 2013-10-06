@@ -91,13 +91,13 @@ The name of the file relative to the configuration C<dir>
 
 =head2 C<config_file_full>
 
-The full path to the config file.
+The full path to the C<config> file.
 
 If not specified, combined from C<config> and C<config_file> wrapped in a C<Path::Tiny>
 
 =head2 C<config>
 
-Returns a C<File::UserConfig> object pre-configured with a few things ( namely, C<dist> and C<module> )
+Returns a C<File::UserConfig> object preconfigured with a few things ( namely, C<dist> and C<module> )
 
 =head2 C<decoder>
 
