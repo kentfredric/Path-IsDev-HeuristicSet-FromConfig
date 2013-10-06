@@ -9,6 +9,18 @@ sub _path {
   goto \&Path::Tiny::path;
 }
 
+=begin MetaPOD::JSON v1.1.0
+
+{
+    "namespace":"Path::IsDev::HeuristicSet::FromConfig::Loader",
+    "interface":"class",
+    "inherits":"Class::Tiny::Object"
+}
+
+=end MetaPOD::JSON
+
+=cut
+
 use Class::Tiny {
   dist             => sub { 'Path-IsDev-HeuristicSet-FromConfig' },
   module           => sub { 'Path::IsDev::HeuristicSet::FromConfig' },

@@ -32,6 +32,18 @@ Pester File::UserConfig if you want this logic improved.
 
 =cut
 
+=begin MetaPOD::JSON v1.1.0
+
+{
+    "namespace":"Path::IsDev::HeuristicSet::FromConfig",
+    "interface":"single_class",
+    "does":"Path::IsDev::Role::HeuristicSet::Simple"
+}
+
+=end MetaPOD::JSON
+
+=cut
+
 use Role::Tiny::With;
 
 with 'Path::IsDev::Role::HeuristicSet::Simple';
