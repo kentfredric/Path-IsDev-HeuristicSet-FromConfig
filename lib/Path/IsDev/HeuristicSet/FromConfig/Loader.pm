@@ -109,11 +109,11 @@ Returns decoded data by slurping C<config_file_full> and throwing it in C<decode
 
 =head2 C<heuristics>
 
-Proxy for C<< data->{heuristics} >> 
+Proxy for C<< data->{heuristics} >>
 
 =head2 C<negative_heuristics>
 
-Proxy for C<< data->{negative_heuristics} >> 
+Proxy for C<< data->{negative_heuristics} >>
 
 =begin MetaPOD::JSON v1.1.0
 
