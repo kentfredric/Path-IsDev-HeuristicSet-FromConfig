@@ -10,6 +10,8 @@ BEGIN {
   $Path::IsDev::HeuristicSet::FromConfig::Loader::VERSION = '0.1.0';
 }
 
+# ABSTRACT: Configuration loader and decoder for C<::FromConfig>
+
 sub _path {
   require Path::Tiny;
   goto \&Path::Tiny::path;
@@ -43,6 +45,14 @@ use Class::Tiny {
   },
 };
 
+
+
+
+
+
+
+
+
 1;
 
 __END__
@@ -53,11 +63,57 @@ __END__
 
 =head1 NAME
 
-Path::IsDev::HeuristicSet::FromConfig::Loader
+Path::IsDev::HeuristicSet::FromConfig::Loader - Configuration loader and decoder for C<::FromConfig>
 
 =head1 VERSION
 
 version 0.1.0
+
+=head1 ATTRIBUTES
+
+=head2 C<dist>
+
+The name of the C<dist> for C<sharedir> mechanics and C<config> paths.
+
+    Path-IsDev-HeuristicSet-FromConfig
+
+=head2 C<module>
+
+The name of the C<module> for C<sharedir> mechanics and C<config> paths.
+
+    Path::IsDev::HeuristicSet::FromConfig
+
+=head2 C<config_file>
+
+The name of the file relative to the configuration dir
+
+    config.json
+
+=head2 C<config_file_full>
+
+The full path to the config file.
+
+If not specified, combined from C<config> and C<config_file> wrapped in a C<Path::Tiny>
+
+=head2 C<config>
+
+Returns a File::UserConfig object preconfigured with a few things ( namely, C<dist> and C<module> )
+
+=head2 C<decoder>
+
+Returns a JSON object to perform decoding with
+
+=head2 C<data>
+
+Returns decoded data by slurping C<config_file_full> and throwing it in C<decoder>
+
+=head2 C<heuristics>
+
+Proxy for C<< data->{heuristics} >> 
+
+=head2 C<negative_heuristics>
+
+Proxy for C<< data->{negative_heuristics} >> 
 
 =begin MetaPOD::JSON v1.1.0
 

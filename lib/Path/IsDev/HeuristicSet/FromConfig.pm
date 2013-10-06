@@ -21,9 +21,11 @@ require Path::IsDev::HeuristicSet::FromConfig::Loader;
 
 my $loader = Path::IsDev::HeuristicSet::FromConfig::Loader->new();
 
+
 sub heuristics {
   return @{ $loader->heuristics() };
 }
+
 
 sub negative_heuristics {
   return @{ $loader->negative_heuristics() };
@@ -69,6 +71,20 @@ In fact, its so aggressive at this, I had to put a bit of code in the tests to s
 creating those directories during tests >_>.
 
 Pester File::UserConfig if you want this logic improved.
+
+=head1 METHODS
+
+=head2 C<heuristics>
+
+Satisfies the role L<< C<HeuristicSet::Simple>|Path::IsDev::Role::HeuristicSet::Simple/heuristics >>
+
+Returns the values in the configuration file in the field C<heuristics>
+
+=head2 C<negative_heuristics>
+
+Satisfies the role L<< C<HeuristicSet::Simple>|Path::IsDev::Role::HeuristicSet::Simple/negative_heuristics >>
+
+Returns the values in the configuration file in the field C<negative_heuristics>
 
 =begin MetaPOD::JSON v1.1.0
 

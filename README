@@ -32,6 +32,18 @@ SYNOPSIS
 
     Pester File::UserConfig if you want this logic improved.
 
+METHODS
+  "heuristics"
+    Satisfies the role "HeuristicSet::Simple"
+
+    Returns the values in the configuration file in the field "heuristics"
+
+  "negative_heuristics"
+    Satisfies the role "HeuristicSet::Simple"
+
+    Returns the values in the configuration file in the field
+    "negative_heuristics"
+
 AUTHOR
     Kent Fredric <kentfredric@gmail.com>
 
