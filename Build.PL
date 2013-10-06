@@ -17,7 +17,7 @@ my %module_build_args = (
     "Kent Fredric <kentfredric\@gmail.com>"
   ],
   "dist_name" => "Path-IsDev-HeuristicSet-FromConfig",
-  "dist_version" => "0.1.0",
+  "dist_version" => "0.001000",
   "license" => "perl",
   "module_name" => "Path::IsDev::HeuristicSet::FromConfig",
   "recommends" => {},
@@ -29,7 +29,7 @@ my %module_build_args = (
     "Path::IsDev::Role::HeuristicSet::Simple" => 0,
     "Path::Tiny" => 0,
     "Role::Tiny::With" => 0,
-    "perl" => "v5.10.0",
+    "perl" => "5.006",
     "strict" => 0,
     "warnings" => 0
   },
