@@ -17,6 +17,6 @@ is( ref Path::IsDev::HeuristicSet::FromConfig::Loader->new()->heuristics, 'ARRAY
 my $hash = {};
 $hash->{$_} = 1 for @{ Path::IsDev::HeuristicSet::FromConfig::Loader->new()->negative_heuristics };
 
-ok( exists $hash->{PerlINC} ,  'PerlINC is in negatives' );
+ok( exists $hash->{PerlINC}, 'PerlINC is in negatives' );
 
 done_testing;
