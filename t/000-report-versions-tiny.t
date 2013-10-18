@@ -56,12 +56,14 @@ eval { $v .= pmver('IO::Handle','any version') };
 eval { $v .= pmver('IPC::Open3','any version') };
 eval { $v .= pmver('JSON','any version') };
 eval { $v .= pmver('Module::Build','0.4007') };
+eval { $v .= pmver('Path::IsDev::NegativeHeuristic::HomeDir','1.000000') };
+eval { $v .= pmver('Path::IsDev::NegativeHeuristic::PerlINC','1.000000') };
 eval { $v .= pmver('Path::IsDev::Object','any version') };
 eval { $v .= pmver('Path::IsDev::Role::HeuristicSet::Simple','any version') };
 eval { $v .= pmver('Path::Tiny','any version') };
 eval { $v .= pmver('Role::Tiny::With','any version') };
 eval { $v .= pmver('Test::File::ShareDir','any version') };
-eval { $v .= pmver('Test::More','0.98') };
+eval { $v .= pmver('Test::More','0.99') };
 eval { $v .= pmver('strict','any version') };
 eval { $v .= pmver('warnings','any version') };
 

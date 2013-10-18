@@ -3,7 +3,7 @@ NAME
     configuration file
 
 VERSION
-    version 0.001000
+    version 0.002000
 
 SYNOPSIS
         export PATH_ISDEV_DEFAULT_SET="FromConfig";

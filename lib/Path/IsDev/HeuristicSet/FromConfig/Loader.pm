@@ -7,7 +7,7 @@ BEGIN {
   $Path::IsDev::HeuristicSet::FromConfig::Loader::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $Path::IsDev::HeuristicSet::FromConfig::Loader::VERSION = '0.001000';
+  $Path::IsDev::HeuristicSet::FromConfig::Loader::VERSION = '0.002000';
 }
 
 # ABSTRACT: Configuration loader and decoder for C<::FromConfig>
@@ -66,7 +66,7 @@ Path::IsDev::HeuristicSet::FromConfig::Loader - Configuration loader and decoder
 
 =head1 VERSION
 
-version 0.001000
+version 0.002000
 
 =head1 ATTRIBUTES
 

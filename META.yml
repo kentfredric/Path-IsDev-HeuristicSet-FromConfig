@@ -10,11 +10,11 @@ build_requires:
   Module::Build: 0.4007
   Path::IsDev::Object: 0
   Test::File::ShareDir: 0
-  Test::More: 0.98
+  Test::More: 0.99
 configure_requires:
   Module::Build: 0.4007
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.132661'
+generated_by: 'Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.132830'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -23,14 +23,16 @@ name: Path-IsDev-HeuristicSet-FromConfig
 provides:
   Path::IsDev::HeuristicSet::FromConfig:
     file: lib/Path/IsDev/HeuristicSet/FromConfig.pm
-    version: 0.001000
+    version: 0.002000
   Path::IsDev::HeuristicSet::FromConfig::Loader:
     file: lib/Path/IsDev/HeuristicSet/FromConfig/Loader.pm
-    version: 0.001000
+    version: 0.002000
 requires:
   Class::Tiny: 0
   File::UserConfig: 0
   JSON: 0
+  Path::IsDev::NegativeHeuristic::HomeDir: 1.000000
+  Path::IsDev::NegativeHeuristic::PerlINC: 1.000000
   Path::IsDev::Role::HeuristicSet::Simple: 0
   Path::Tiny: 0
   Role::Tiny::With: 0
@@ -41,30 +43,32 @@ resources:
   bugtracker: https://github.com/kentfredric/Path-IsDev-HeuristicSet-FromConfig/issues
   homepage: https://github.com/kentfredric/Path-IsDev-HeuristicSet-FromConfig
   repository: https://github.com/kentfredric/Path-IsDev-HeuristicSet-FromConfig.git
-version: 0.001000
+version: 0.002000
 x_BuiltWith:
   failures:
     Role::Tiny::With: 'Module::MetaData could not parse a version from /home/kent/perl5/perlbrew/perls/perl-5.19.3/lib/site_perl/5.19.3/Role/Tiny/With.pm'
   modules:
     Class::Tiny: 0.011
-    Dist::Zilla::PluginBundle::Author::KENTNL: 1.9.0
+    Dist::Zilla::PluginBundle::Author::KENTNL: 2.000000
     Dist::Zilla::PluginBundle::Author::KENTNL::Lite: 1.7.2
     File::Spec: 3.44
     File::UserConfig: 0.06
     FindBin: 1.51
     IO::Handle: 1.35
     IPC::Open3: 1.15
-    JSON: 2.59
+    JSON: 2.61
     Module::Build: 0.4007
-    Path::IsDev::Object: 0.6.0
-    Path::IsDev::Role::HeuristicSet::Simple: 0.6.0
-    Path::Tiny: 0.038
+    Path::IsDev::NegativeHeuristic::HomeDir: 1.000000
+    Path::IsDev::NegativeHeuristic::PerlINC: 1.000000
+    Path::IsDev::Object: 1.000000
+    Path::IsDev::Role::HeuristicSet::Simple: 1.000000
+    Path::Tiny: 0.044
     Pod::Coverage::TrustPod: 0.100002
-    Test::CPAN::Changes: 0.23
+    Test::CPAN::Changes: 0.25
     Test::CPAN::Meta: 0.23
     Test::File::ShareDir: 0.3.3
     Test::Kwalitee: 1.15
-    Test::More: 0.98
+    Test::More: 0.99
     Test::Pod: 1.48
     Test::Pod::Coverage: 1.08
     strict: 1.08
@@ -82,7 +86,7 @@ x_BuiltWith:
     myarchname: x86_64-linux
     osname: linux
   platform: linux
-  uname: 'Linux 3.11.2-gentoo x86_64 GenuineIntel GNU/Linux'
+  uname: 'Linux 3.11.4-gentoo x86_64 GenuineIntel GNU/Linux'
 x_Dist_Zilla:
   perl:
     version: 5.019003
@@ -169,7 +173,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Test::Kwalitee
       name: '@Author::KENTNL/Test::Kwalitee'
-      version: 2.06
+      version: 2.07
     -
       class: Dist::Zilla::Plugin::EOLTests
       name: '@Author::KENTNL/EOLTests'
@@ -182,12 +186,13 @@ x_Dist_Zilla:
       class: Dist::Zilla::Plugin::Test::Compile
       config:
         Dist::Zilla::Plugin::Test::Compile:
+          filename: t/00-compile.t
           module_finder:
             - ':InstallModules'
           script_finder:
             - ':ExecFiles'
       name: '@Author::KENTNL/Test::Compile'
-      version: 2.034
+      version: 2.037
     -
       class: Dist::Zilla::Plugin::Test::Perl::Critic
       name: '@Author::KENTNL/Test::Perl::Critic'
@@ -240,7 +245,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Author::KENTNL::MinimumPerl
       name: '@Author::KENTNL/Author::KENTNL::MinimumPerl'
-      version: 1.9.0
+      version: 2.000000
     -
       class: Dist::Zilla::Plugin::Authority
       name: '@Author::KENTNL/Authority'
@@ -264,7 +269,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::CheckExtraTests
       name: '@Author::KENTNL/CheckExtraTests'
-      version: 0.011
+      version: 0.013
     -
       class: Dist::Zilla::Plugin::TestRelease
       name: '@Author::KENTNL/TestRelease'

@@ -6,7 +6,7 @@ BEGIN {
   $Path::IsDev::HeuristicSet::FromConfig::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $Path::IsDev::HeuristicSet::FromConfig::VERSION = '0.001000';
+  $Path::IsDev::HeuristicSet::FromConfig::VERSION = '0.002000';
 }
 
 # ABSTRACT: A Custom Heuristic Set from a configuration file
@@ -45,7 +45,7 @@ Path::IsDev::HeuristicSet::FromConfig - A Custom Heuristic Set from a configurat
 
 =head1 VERSION
 
-version 0.001000
+version 0.002000
 
 =head1 SYNOPSIS
 

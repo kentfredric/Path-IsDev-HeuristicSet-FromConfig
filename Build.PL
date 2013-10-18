@@ -17,7 +17,7 @@ my %module_build_args = (
     "Kent Fredric <kentfredric\@gmail.com>"
   ],
   "dist_name" => "Path-IsDev-HeuristicSet-FromConfig",
-  "dist_version" => "0.001000",
+  "dist_version" => "0.002000",
   "license" => "perl",
   "module_name" => "Path::IsDev::HeuristicSet::FromConfig",
   "recommends" => {},
@@ -26,6 +26,8 @@ my %module_build_args = (
     "Class::Tiny" => 0,
     "File::UserConfig" => 0,
     "JSON" => 0,
+    "Path::IsDev::NegativeHeuristic::HomeDir" => "1.000000",
+    "Path::IsDev::NegativeHeuristic::PerlINC" => "1.000000",
     "Path::IsDev::Role::HeuristicSet::Simple" => 0,
     "Path::Tiny" => 0,
     "Role::Tiny::With" => 0,
@@ -41,7 +43,7 @@ my %module_build_args = (
     "IPC::Open3" => 0,
     "Path::IsDev::Object" => 0,
     "Test::File::ShareDir" => 0,
-    "Test::More" => "0.98"
+    "Test::More" => "0.99"
   }
 );
 
