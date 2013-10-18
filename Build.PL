@@ -17,7 +17,7 @@ my %module_build_args = (
     "Kent Fredric <kentfredric\@gmail.com>"
   ],
   "dist_name" => "Path-IsDev-HeuristicSet-FromConfig",
-  "dist_version" => "0.001000",
+  "dist_version" => "0.001001",
   "license" => "perl",
   "module_name" => "Path::IsDev::HeuristicSet::FromConfig",
   "recommends" => {},
@@ -41,7 +41,7 @@ my %module_build_args = (
     "IPC::Open3" => 0,
     "Path::IsDev::Object" => 0,
     "Test::File::ShareDir" => 0,
-    "Test::More" => "0.98"
+    "Test::More" => "0.99"
   }
 );
 

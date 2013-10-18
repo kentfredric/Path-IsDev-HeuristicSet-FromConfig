@@ -61,7 +61,7 @@ eval { $v .= pmver('Path::IsDev::Role::HeuristicSet::Simple','any version') };
 eval { $v .= pmver('Path::Tiny','any version') };
 eval { $v .= pmver('Role::Tiny::With','any version') };
 eval { $v .= pmver('Test::File::ShareDir','any version') };
-eval { $v .= pmver('Test::More','0.98') };
+eval { $v .= pmver('Test::More','0.99') };
 eval { $v .= pmver('strict','any version') };
 eval { $v .= pmver('warnings','any version') };
 
