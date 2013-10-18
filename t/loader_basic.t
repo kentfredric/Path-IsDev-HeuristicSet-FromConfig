@@ -13,5 +13,7 @@ use Test::File::ShareDir -share => { -dist => { 'Path-IsDev-HeuristicSet-FromCon
 use Path::IsDev::HeuristicSet::FromConfig::Loader;
 
 is( ref Path::IsDev::HeuristicSet::FromConfig::Loader->new()->heuristics, 'ARRAY', 'loads and gives back an array ok' );
+my (@negatives) = @{ Path::IsDev::HeuristicSet::FromConfig::Loader->new()->negative_heuristics };
+is( grep { /::PerlINC/ } @negatives, 1,  'PerlINC is in negatives' );
 
 done_testing;
