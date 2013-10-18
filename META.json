@@ -44,6 +44,8 @@
             "Class::Tiny" : "0",
             "File::UserConfig" : "0",
             "JSON" : "0",
+            "Path::IsDev::Heuristic::HomeDir" : "1.000000",
+            "Path::IsDev::Heuristic::PerlINC" : "1.000000",
             "Path::IsDev::Role::HeuristicSet::Simple" : "0",
             "Path::Tiny" : "0",
             "Role::Tiny::With" : "0",
@@ -67,11 +69,11 @@
    "provides" : {
       "Path::IsDev::HeuristicSet::FromConfig" : {
          "file" : "lib/Path/IsDev/HeuristicSet/FromConfig.pm",
-         "version" : "0.001001"
+         "version" : "0.002000"
       },
       "Path::IsDev::HeuristicSet::FromConfig::Loader" : {
          "file" : "lib/Path/IsDev/HeuristicSet/FromConfig/Loader.pm",
-         "version" : "0.001001"
+         "version" : "0.002000"
       }
    },
    "release_status" : "stable",
@@ -86,9 +88,11 @@
          "web" : "https://github.com/kentfredric/Path-IsDev-HeuristicSet-FromConfig"
       }
    },
-   "version" : "0.001001",
+   "version" : "0.002000",
    "x_BuiltWith" : {
       "failures" : {
+         "Path::IsDev::Heuristic::HomeDir" : "module was not found in INC",
+         "Path::IsDev::Heuristic::PerlINC" : "module was not found in INC",
          "Role::Tiny::With" : "Module::MetaData could not parse a version from /home/kent/perl5/perlbrew/perls/perl-5.19.3/lib/site_perl/5.19.3/Role/Tiny/With.pm"
       },
       "modules" : {
