@@ -69,11 +69,11 @@
    "provides" : {
       "Path::IsDev::HeuristicSet::FromConfig" : {
          "file" : "lib/Path/IsDev/HeuristicSet/FromConfig.pm",
-         "version" : "0.001001"
+         "version" : "0.002000"
       },
       "Path::IsDev::HeuristicSet::FromConfig::Loader" : {
          "file" : "lib/Path/IsDev/HeuristicSet/FromConfig/Loader.pm",
-         "version" : "0.001001"
+         "version" : "0.002000"
       }
    },
    "release_status" : "stable",
@@ -88,7 +88,7 @@
          "web" : "https://github.com/kentfredric/Path-IsDev-HeuristicSet-FromConfig"
       }
    },
-   "version" : "0.001001",
+   "version" : "0.002000",
    "x_BuiltWith" : {
       "failures" : {
          "Role::Tiny::With" : "Module::MetaData could not parse a version from /home/kent/perl5/perlbrew/perls/perl-5.19.3/lib/site_perl/5.19.3/Role/Tiny/With.pm"
