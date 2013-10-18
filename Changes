@@ -1,6 +1,8 @@
 Release history for Path-IsDev-HeuristicSet-FromConfig
 
 {{$NEXT}}
+
+0.002000 2013-10-18T11:17:13Z
  [00 Minor]
  - Include HomeDir and PerlINC in the default config.
 
