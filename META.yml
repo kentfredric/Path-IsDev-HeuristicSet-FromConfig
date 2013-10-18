@@ -23,16 +23,16 @@ name: Path-IsDev-HeuristicSet-FromConfig
 provides:
   Path::IsDev::HeuristicSet::FromConfig:
     file: lib/Path/IsDev/HeuristicSet/FromConfig.pm
-    version: 0.002000
+    version: 0.001001
   Path::IsDev::HeuristicSet::FromConfig::Loader:
     file: lib/Path/IsDev/HeuristicSet/FromConfig/Loader.pm
-    version: 0.002000
+    version: 0.001001
 requires:
   Class::Tiny: 0
   File::UserConfig: 0
   JSON: 0
-  Path::IsDev::Heuristic::HomeDir: 1.000000
-  Path::IsDev::Heuristic::PerlINC: 1.000000
+  Path::IsDev::NegativeHeuristic::HomeDir: 1.000000
+  Path::IsDev::NegativeHeuristic::PerlINC: 1.000000
   Path::IsDev::Role::HeuristicSet::Simple: 0
   Path::Tiny: 0
   Role::Tiny::With: 0
@@ -43,11 +43,9 @@ resources:
   bugtracker: https://github.com/kentfredric/Path-IsDev-HeuristicSet-FromConfig/issues
   homepage: https://github.com/kentfredric/Path-IsDev-HeuristicSet-FromConfig
   repository: https://github.com/kentfredric/Path-IsDev-HeuristicSet-FromConfig.git
-version: 0.002000
+version: 0.001001
 x_BuiltWith:
   failures:
-    Path::IsDev::Heuristic::HomeDir: 'module was not found in INC'
-    Path::IsDev::Heuristic::PerlINC: 'module was not found in INC'
     Role::Tiny::With: 'Module::MetaData could not parse a version from /home/kent/perl5/perlbrew/perls/perl-5.19.3/lib/site_perl/5.19.3/Role/Tiny/With.pm'
   modules:
     Class::Tiny: 0.011
@@ -60,6 +58,8 @@ x_BuiltWith:
     IPC::Open3: 1.15
     JSON: 2.61
     Module::Build: 0.4007
+    Path::IsDev::NegativeHeuristic::HomeDir: 1.000000
+    Path::IsDev::NegativeHeuristic::PerlINC: 1.000000
     Path::IsDev::Object: 1.000000
     Path::IsDev::Role::HeuristicSet::Simple: 1.000000
     Path::Tiny: 0.044
